@@ -1,0 +1,381 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+ul{
+    display: flex;
+    padding-left: 30px;
+    gap: 10px;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+li i{
+    font-size: 20px;
+    transition: transform 0.5 ease-in-out;
+}
+span{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 30px;
+    display: none;
+}
+li:hover i{
+    transform: rotate(20deg);
+    color: blue;
+}
+li:hover span{
+    display: block;
+}
+.text-header{
+    left: 600px;
+    position: relative;
+    gap: 10px;
+}
+nav{
+    width: 100%;
+    background-color: #cbd8d6;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+}
+.logo{
+    width: 100px;
+    height: 80px;
+    display: flex;
+}
+.logo img{
+    width: 100px;
+    height: 70px;
+}
+.logo  p{
+    margin-right: 200px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    padding-right: 120px;
+    gap: 20px;
+}
+ul li a{
+    font-size: 20px;
+    color: rgb(65, 65, 176);
+    text-decoration: none;
+
+}
+ul li a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid pink;
+    padding-bottom: 15px;
+
+}main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua ; */
+}
+section{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    animation: slideImage 15s infinite;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide:nth-child(1){
+    animation-delay: 0s;
+}
+.slide:nth-child(2){
+    animation-delay: 3s;
+}
+.slide:nth-child(3){
+    animation-delay: 6s;
+}
+.slide:nth-child(4){
+    animation-delay: 9s;
+}
+.slide:nth-child(5){
+    animation-delay: 12s;
+}
+
+@keyframes slideImage{
+    0%{
+        opacity: 0;
+    }
+    18%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.container{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(34, 12, 12);
+}
+.top{
+    width: 100%;
+    height: 20%;
+}
+.buttom{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.top h1{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: red;
+    font-family: "Battambang", system-ui;
+}
+.buttom .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation: Img 8s ease-in-out infinite;
+    /* infinit */
+}
+.buttom .left img{
+    width: 80%;
+    height: 100%;
+}
+@keyframes Img{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.buttom .right{
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttom .right h1,.buttom .right1 h1 ,.buttom .right2 h1{
+    font-size: 30px;
+    color: red;
+    padding-bottom: 10px;
+}
+.buttom .right p{
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    font-family: "Battambang", system-ui;
+    animation: anime 8s ease-in-out infinite;
+}
+@keyframes anime{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.buttom .left1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation: Img1 8s ease-in-out infinite;
+    /* infinit */
+}
+.buttom .left1 img{
+    width: 80%;
+    height: 100%;
+}
+.buttom .right1{
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttom .right1 p{
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    font-family: "Battambang", system-ui;
+    animation: anime1 8s ease-in-out infinite;
+}
+@keyframes Img1{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anime1{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.hr{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.session2{
+    width: 100%;
+    height: 560px;
+    background-color: rgb(45, 31, 31);
+    padding-top: 20px;
+    padding: 20px;
+}
+.session2 h1{
+    color: red;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.session2 .scroll{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    gap: 30px;
+    padding-top: 15px;
+    overflow-x: scroll;
+    display: flex;
+}
+.session2 .scroll::-webkit-scrollbar{
+    display: none;
+}
+.session2 .scroll .scrol-box{
+    width: 150px;
+    height: 100%;
+    background-color: black;
+    border: 2px solid pink;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+.session2 .scroll .scrol-box{
+    border: 2px solid blue;
+}
+.footer {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: space-around;
+    padding: 40px 0;
+    border-top: 3px solid red;
+    
+
+}
+.footer .clomun .row{
+    flex-direction: column;
+    display: flex;
+}
+.footer h2 {
+    color: red;
+    margin-bottom: 20px;
+    font-family: "Battambang", system-ui;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    color: white;
+    font-family: "Battambang", system-ui;
+}
+.footer ul li a {
+    margin-right: 8px;
+    
+}
+/* .social-icons img {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.social-item {
+    margin-bottom: 15px;
+} */
+.copyright {
+    text-align: center;
+    padding: 15px;
+    color: black;
+    border-top: 5px solid red;
+    font-family: "Battambang", system-ui;
+}
